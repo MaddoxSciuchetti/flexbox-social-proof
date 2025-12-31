@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+      *{
+        box-sizing: border-box;
+        padding: 0; 
+        margin: 0; 
+        font-family: "Kumbh Sans", sans-serif;
+      }
+
+      body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        margin: auto;
+      }
+      
+      .main{
+
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+
+      }
+
+      .front-page-content{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        margin: auto;
+      }
+
+  
+      .image-div{
+        display: flex;
+        align-items: center;
+      }
+
+      .slogan-container {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        align-items: left;
+        text-align: left;
+        font-size: 15px;
+      }
+
+
+
+      .slogan {
+        font-size: 45px;
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+      }
+
+      .slogan-paragraph{
+        width: 300px;
+        font-size: 13px;
+        margin-top: 20px;
+        font-weight: 400;
+        color: hsl(303, 10%, 53%); 
+      }
+
+      .reviews {    
+        width: 500px;
+        margin-top: -15px;
+      }
+
+      .no1{
+        margin-left: 20px;
+      }
+
+      .no2{
+        margin-left: 60px;
+      }
+
+      .no3 {
+        margin-left: 100px;
+      }
+    
+      .review-paragraph {
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        gap: 10px;
+      }
+
+
+      .star-div{
+        background-color: hsla(300, 50%, 77%, 0.178);
+        margin-top: 10px;
+        border-radius: 10px;
+        font-size: 13px;
+
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+        display: flex;
+        justify-content: right;
+        text-align: right;
+        align-items: center;
+        padding: 17px;
+        justify-content: left;
+        gap: 10px;
+        width: 370px; 
+      }
+
+      .stars {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+        }
+
+
+      .star-div img{
+        width: 13px;
+        height: 13px;
+      
+      }
+
+      .image-div{
+        margin-top: 40px;
+      }
+
+      .profile-div{
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: left;
+        justify-content: left;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+
+      }
+
+      .profile-pair{
+        display: flex;
+        align-items: left;
+        margin: left;
+      }
+      .name-status {
+        
+        display: flex;
+        flex-direction: column;
+        margin-left:  20px;
+        font-size: 12px;
+        gap: 4px;
+      }
+
+      .profile-name {
+        color: white;
+        font-weight: 600;
+      }
+
+      .profile-description{
+        width: 300px;
+        color: white;
+        font-weight: 400;
+        font-size: 12px;
+      }
+
+      .profile-status{
+        font-weight: 600;
+        color: hsl(333, 80%, 67%);
+      }
+      .img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+      }
+      
+      .irene-div{
+        margin-top: 30px; 
+        margin-left: 20px;
+      }
+
+      .Anne-div {
+        margin-top: 60px;
+        margin-left: 20px;
+      }
+
+      @media(max-width: 375px){
+        .front-page-content{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+        }
+
+        .slogan-container{
+          align-items: center;
+          text-align: center;
+          margin-top: 40px;
+        }
+
+        .slogan {
+        font-size: 30px;
+        width: 200px;
+        
+      }
+
+        .no1{
+        margin-left: 0px;
+        }
+
+        .no2{
+          margin-left: 0px;
+        }
+
+        .no3 {
+          margin-left: 0px;
+        }
+
+        .reviews{
+          margin-top: 30px;
+          width: 300px;
+        }
+
+        .star-div{
+          margin: auto;
+          margin-top: 10px;
+          border-radius: 10px;
+          font-size: 13px;
+          color: hsl(300, 43%, 22%);
+          font-weight: 700;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: right;
+          align-items: center;
+          padding: 10px;
+          justify-content: left;
+          gap: 10px;
+          width: 280px; 
+
+        }
+
+        .stars {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .review-paragraph{
+          align-items: center;
+          text-align: center;
+          margin-left: 0px;
+        }
+
+        
+
+        .image-div{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 50px;
+        }
+
+        .profile-div{
+          display: flex;
+          align-items: center;
+        }
+
+        .main{
+          width: 100%;
+        }
+
+        .irene-div {
+          margin-left: 0px;
+          margin-top: 30px
+        }
+
+        .Anne-div{
+          margin-left: 0px;
+          margin-top: 30px;
+          
+        }
+      }
+
+
+      
+
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="main">
+
+      <div class="front-page-content">
+
+        <div class="slogan-container">
+          <p class="slogan">10,000+ of our users love our products.</p>
+          <p class="slogan-paragraph">
+            We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.
+          </p>
+        </div>
+
+        <div class="reviews">
+   
+
+            <div class="star-div no1">
+              <div class="stars">
+
+                <img class="star-img"src="images/icon-star.svg" alt="start"/>
+                <img class="star-img"src="images/icon-star.svg" alt="start"/>
+                <img class="star-img"src="images/icon-star.svg" alt="start"/>
+                <img class="star-img"src="images/icon-star.svg" alt="start"/>
+                <img class="star-img"src="images/icon-star.svg" alt="start"/>
+
+              </div>
+              <p class="review-paragraph">Rated 5 Stars in Reviews</p>
+            </div>
+
+          <div class="star-div no2">
+            <div class="stars">
+
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+
+            </div>
+            <p class="review-paragraph">Rated 5 Stars in Report Guru</p>
+          </div>
+
+          <div class="star-div no3">
+            <div class="stars">
+              
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+              <img class="star-img"src="images/icon-star.svg" alt="start"/>
+
+            </div>
+            <p class="review-paragraph">Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+    
+
+
+      </div>
+
+      <div class="image-div">
+
+        <div class="profile-div">
+  
+            <div class="profile-pair">
+              <img class="img colton"src="images/image-colton.jpg" alt="colton"/>
+              <div class="name-status">
+                <p class="profile-name">Colton Smith </p>
+                <p class="profile-status">Verified Buyer</p>
+              </div>
+            </div>
+            <p class="profile-description">
+              "We needed the same printed design as the one we had ordered a week prior.
+              Not only did they find the original order, but we also received it in time.
+              Excellent!"
+            </p>
+        </div>
+
+
+          <div class="profile-div irene-div">
+
+            <div class="profile-pair">
+              <img class="img irene"src="images/image-irene.jpg" alt="irene"/>
+              <div class="name-status">
+                <p class="profile-name">Irene Roberts  </p>
+                <p class="profile-status">Verified Buyer</p>
+              </div>
+            </div>
+            <p class="profile-description">
+              "Customer service is always excellent and very quick turn around. Completely
+              delighted with the simplicity of the purchase and the speed of delivery."
+            </p>
+
+          </div>
+
+
+
+
+  
+
+          <div class="profile-div Anne-div">
+
+            <div class="profile-pair">
+              <img class="img anne"src="images/image-anne.jpg" alt="anne"/>
+              <div class="name-status">
+                <p class="profile-name">Anne Wallace</p>
+                <p class="profile-status">Verified Buyer</p>
+
+              </div>
+            </div>
+            <p class="profile-description">
+              "Put an order with this company and can only praise them for the very high
+              standard. Will definitely use them again and recommend them to everyone!"
+            </p>
+
+          </div>
+
+
+   
+    
+
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
