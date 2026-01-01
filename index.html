@@ -33,7 +33,14 @@
         min-height: 100vh;
         align-items: center;
         margin: auto;
-      }
+
+        background-image: 
+          url("./images/bg-pattern-top-desktop.svg"),
+          url("./images/bg-pattern-bottom-desktop.svg");
+          background-repeat: no-repeat, no-repeat;
+          background-position: top left, bottom right;
+          background-size: 700px 10;
+  }
       
       .main{
 
@@ -43,6 +50,11 @@
         justify-content: center;
         align-items: center;
         overflow-x: hidden; 
+
+        max-width: 100%px;
+        width: 1100px;
+
+
 
 
       }
@@ -81,7 +93,7 @@
       }
 
       .slogan-paragraph{
-        width: 300px;
+        width: 380px;
         font-size: 14px;
         margin-top: 20px;
         font-weight: 400;
@@ -89,7 +101,7 @@
       }
 
       .reviews {    
-        width: 500px;
+        width: 540px;
         margin-top: -15px;
       }
 
@@ -115,9 +127,9 @@
 
       .star-div{
         background-color: hsla(300, 40%, 84%, 0.178);
-        margin-top: 10px;
+        margin-top: 15px;
         border-radius: 10px;
-        font-size: 13px;
+        font-size: 15px;
 
         color: hsl(300, 43%, 22%);
         font-weight: 700;
@@ -128,7 +140,7 @@
         padding: 22px;
         justify-content: left;
         gap: 10px;
-        width: 390px; 
+        width: 440px; 
       }
 
       .stars {
@@ -136,11 +148,12 @@
           justify-content: center;
           gap: 10px;
         }
+  
 
 
       .star-div img{
-        width: 13px;
-        height: 13px;
+        width: 17px;
+        height: 17px;
       
       }
 
@@ -149,8 +162,8 @@
       }
 
       .profile-div{
-        width: 330px;
-        height: 220px;
+        width: 345px;
+        height: 225px;
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
@@ -184,7 +197,7 @@
         width: 300px;
         color: white;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 13px;
       }
 
       .profile-status{
@@ -199,13 +212,15 @@
       
       .irene-div{
         margin-top: 30px; 
-        margin-left: 20px;
+        margin-left: 30px;
       }
 
       .Anne-div {
         margin-top: 60px;
-        margin-left: 20px;
+        margin-left: 30px;
       }
+
+      
 
       @media(max-width: 375px){
         .front-page-content{
